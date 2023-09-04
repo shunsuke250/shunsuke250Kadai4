@@ -16,25 +16,25 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dKu-6D-iaC">
-                                <rect key="frame" x="175" y="148" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dKu-6D-iaC">
+                                <rect key="frame" x="175" y="159" width="43" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="z5T-ST-A8R"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gvG-cK-QOX">
-                                <rect key="frame" x="159" y="258" width="75" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gvG-cK-QOX">
+                                <rect key="frame" x="159" y="353.33333333333331" width="75" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                 <connections>
                                     <action selector="didTapIncrementButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BMg-Qx-Cx8"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1b4-Zf-yut">
-                                <rect key="frame" x="159" y="351" width="75" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1b4-Zf-yut">
+                                <rect key="frame" x="159" y="408.33333333333331" width="75" height="35.333333333333314"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                 <connections>
@@ -44,6 +44,15 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="dKu-6D-iaC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="175" id="6L0-Lj-ZDK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="1b4-Zf-yut" secondAttribute="bottom" constant="374.33333333333331" id="ANM-4L-iWA"/>
+                            <constraint firstItem="gvG-cK-QOX" firstAttribute="centerX" secondItem="dKu-6D-iaC" secondAttribute="centerX" id="OhF-zR-eez"/>
+                            <constraint firstItem="dKu-6D-iaC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Wzh-ai-Vb4"/>
+                            <constraint firstItem="1b4-Zf-yut" firstAttribute="centerX" secondItem="dKu-6D-iaC" secondAttribute="centerX" id="iJQ-zn-qDo"/>
+                            <constraint firstItem="dKu-6D-iaC" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="kU8-rn-vVl"/>
+                            <constraint firstItem="1b4-Zf-yut" firstAttribute="top" secondItem="gvG-cK-QOX" secondAttribute="bottom" constant="20" id="swT-zl-CgY"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="clearButton" destination="1b4-Zf-yut" id="OdY-O8-BjE"/>

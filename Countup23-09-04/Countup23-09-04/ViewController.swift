@@ -18,6 +18,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupInitialUI()
+        updateCountNumLabel()
     }
 
     @IBAction func didTapIncrementButton(_ sender: UIButton) {
@@ -31,7 +32,6 @@ class ViewController: UIViewController {
     }
 
     private func setupInitialUI() {
-        countNumLabel.text = "\(countNum)"
         incrementButton.setTitle("+1", for: .normal)
         clearButton.setTitle("Clear", for: .normal)
     }
